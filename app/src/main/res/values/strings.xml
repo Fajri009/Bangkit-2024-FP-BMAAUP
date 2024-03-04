@@ -1,3 +1,70 @@
 <resources>
     <string name="app_name">Bangkit-2024-FP-BMAAUP</string>
+
+    <string name="nama_title">Nama:</string>
+    <string name="generasi">Generasi:</string>
+
+    <integer-array name="data_photo">
+        <item>@drawable/shani</item>
+        <item>@drawable/gracia</item>
+        <item>@drawable/feni</item>
+        <item>@drawable/gita</item>
+        <item>@drawable/zee</item>
+        <item>@drawable/freya</item>
+        <item>@drawable/olla</item>
+        <item>@drawable/lulu</item>
+        <item>@drawable/atin</item>
+        <item>@drawable/indira</item>
+        <item>@drawable/alya</item>
+        <item>@drawable/michie</item>
+        <item>@drawable/lana</item>
+    </integer-array>
+
+    <string-array name="data_nama">
+        <item>Shani Indira Natio</item>
+        <item>Shania Gracia</item>
+        <item>Feni Fitriyanti</item>
+        <item>Gita Sekar Andarini</item>
+        <item>Azizi Asadel</item>
+        <item>Freya Jayawardana</item>
+        <item>Febriola Sinambela</item>
+        <item>Lulu Salsabila</item>
+        <item>Kathrina Irene</item>
+        <item>Indira Seruni</item>
+        <item>Alya Amanda</item>
+        <item>Michelle Alexandra</item>
+        <item>Aurhel Alana</item>
+    </string-array>
+
+    <integer-array name="data_generasi">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>6</item>
+        <item>7</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>11</item>
+        <item>12</item>
+    </integer-array>
+
+    <string-array name="data_tgl_lahir">
+        <item>5 Oktober 1998</item>
+        <item>31 Agustus 1999</item>
+        <item>16 Januari 1999</item>
+        <item>30 Juni 2001</item>
+        <item>16 Mei 2004</item>
+        <item>13 Februari 2006</item>
+        <item>26 Februari 2005</item>
+        <item>23 Oktober 2002</item>
+        <item>26 Juli 2006</item>
+        <item>26 April 2004</item>
+        <item>26 Agustus 2006</item>
+        <item>22 April 2009</item>
+        <item>14 September 2006</item>
+    </string-array>
 </resources>
