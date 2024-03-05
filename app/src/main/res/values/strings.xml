@@ -1,8 +1,25 @@
 <resources>
     <string name="app_name">Bangkit-2024-FP-BMAAUP</string>
 
+    <!-- Home Page -->
     <string name="nama_title">Nama:</string>
-    <string name="generasi">Generasi:</string>
+    <string name="generasi_title">Generasi:</string>
+
+    <!-- Detail Page -->
+    <string name="biodata">Biodata</string>
+    <string name="sosmed">Sosial Media</string>
+    <string name="member_lain">Member Lain</string>
+    <string name="tgl_lahir_title">Tanggal Lahir:</string>
+    <string name="gol_darah_title">Golongan Darah:</string>
+    <string name="tinggi_badan_title">Tinggi Badan:</string>
+    <string name="nama_panggilan_title">Nama Panggilan:</string>
+    <string name="twitter_title">X / Twitter:</string>
+    <string name="ig_title">Instagram:</string>
+
+    <!-- About Page -->
+    <string name="nama_user">Fajri</string>
+    <string name="email_title">Email:</string>
+    <string name="email_user">fajri.harlan.fh@gmail.com</string>
 
     <integer-array name="data_photo">
         <item>@drawable/shani</item>
@@ -66,5 +83,85 @@
         <item>26 Agustus 2006</item>
         <item>22 April 2009</item>
         <item>14 September 2006</item>
+    </string-array>
+
+    <string-array name="data_golongan_darah">
+        <item>B</item>
+        <item>A</item>
+        <item>O</item>
+        <item>O</item>
+        <item>O</item>
+        <item>B</item>
+        <item>B</item>
+        <item>B</item>
+        <item>A</item>
+        <item>A</item>
+        <item>A</item>
+        <item>O</item>
+        <item>-</item>
+    </string-array>
+
+    <string-array name="data_tinggi_badan">
+        <item>167 cm</item>
+        <item>161 cm</item>
+        <item>162 cm</item>
+        <item>165 cm</item>
+        <item>162 cm</item>
+        <item>154 cm</item>
+        <item>154 cm</item>
+        <item>157 cm</item>
+        <item>165 cm</item>
+        <item>160 cm</item>
+        <item>165 cm</item>
+        <item>160 cm</item>
+        <item>163 cm</item>
+    </string-array>
+
+    <string-array name="data_nama_panggilan">
+        <item>Shani</item>
+        <item>Gracia</item>
+        <item>Feni</item>
+        <item>Gita</item>
+        <item>Zee</item>
+        <item>Freya</item>
+        <item>Olla</item>
+        <item>Lulu</item>
+        <item>Kathrina</item>
+        <item>Indira</item>
+        <item>Alya</item>
+        <item>Michie</item>
+        <item>Lana</item>
+    </string-array>
+
+    <string-array name="data_twitter">
+        <item>\@jkt48shani</item>
+        <item>\@jkt48gracia</item>
+        <item>\@jkt48feni</item>
+        <item>\@jkt48gita</item>
+        <item>\@jkt48.zee</item>
+        <item>\@jkt48.freya</item>
+        <item>\@jkt48.olla</item>
+        <item>\@jkt48.lulu</item>
+        <item>\@jkt48.kathrina</item>
+        <item>\@jkt48.indira.s</item>
+        <item>\@jkt48.alya_</item>
+        <item>\@jkt48.michie_</item>
+        <item>\@jkt48.lana.a</item>
+    </string-array>
+
+    <string-array name="data_instagram">
+        <item>\@N_ShaniJKT48</item>
+        <item>\@S_GraciaJKT48</item>
+        <item>\@F_FeniJKT48</item>
+        <item>\@A_GitaJKT48</item>
+        <item>\@A_ZeeJKT48</item>
+        <item>\@Freya_JKT48</item>
+        <item>\@F_OllaJKT48</item>
+        <item>\@A_LuluJKT48</item>
+        <item>\@I_KathrinaJKT48</item>
+        <item>\@SP_IndiraJKT48</item>
+        <item>\@AA_AlyaJKT48</item>
+        <item>\@Michie_JKT48</item>
+        <item>\@AR_LanaJKT48</item>
     </string-array>
 </resources>

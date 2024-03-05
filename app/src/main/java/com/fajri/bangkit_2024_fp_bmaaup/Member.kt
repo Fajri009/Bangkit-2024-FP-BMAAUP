@@ -8,5 +8,10 @@ data class Member(
     val photo: Int,
     val nama: String,
     val generasi: Int,
-    val tglLahir: String
+    val tglLahir: String,
+    val golDarah: String,
+    val tinggiBadan: String,
+    val namaPanggilan: String,
+    val ig: String,
+    val twitter: String
 ): Parcelable

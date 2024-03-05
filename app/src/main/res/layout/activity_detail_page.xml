@@ -1,18 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Detail.DetailPage">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Detail Page"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_foto"
+            android:layout_width="160dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:src="@drawable/lulu" />
+
+        <TextView
+            android:id="@+id/tv_biodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/biodata"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_foto" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/nama_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_nama_panggilan"
+            app:layout_constraintStart_toStartOf="@+id/tv_biodata"
+            app:layout_constraintTop_toBottomOf="@+id/tv_biodata" />
+
+        <TextView
+            android:id="@+id/tv_nama_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_nama"
+            app:layout_constraintStart_toEndOf="@+id/tv_nama"
+            app:layout_constraintTop_toTopOf="@+id/tv_nama"
+            tools:text="Lulu Salsabila" />
+
+        <TextView
+            android:id="@+id/tv_generasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/generasi_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_nama_panggilan"
+            app:layout_constraintStart_toStartOf="@+id/tv_biodata"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+        <TextView
+            android:id="@+id/tv_generasi_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_member"
+            app:layout_constraintTop_toTopOf="@+id/tv_generasi"
+            tools:text="8" />
+
+        <TextView
+            android:id="@+id/tv_tgl_lahir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/tgl_lahir_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_nama_panggilan"
+            app:layout_constraintStart_toStartOf="@+id/tv_biodata"
+            app:layout_constraintTop_toBottomOf="@+id/tv_generasi" />
+
+        <TextView
+            android:id="@+id/tv_tgl_lahir_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_member"
+            app:layout_constraintTop_toTopOf="@+id/tv_tgl_lahir"
+            tools:text="23 Oktober 2002" />
+
+        <TextView
+            android:id="@+id/tv_gol_darah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/gol_darah_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_nama_panggilan"
+            app:layout_constraintStart_toStartOf="@+id/tv_biodata"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tgl_lahir" />
+
+        <TextView
+            android:id="@+id/tv_gol_darah_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_member"
+            app:layout_constraintTop_toTopOf="@+id/tv_gol_darah"
+            tools:text="B" />
+
+        <TextView
+            android:id="@+id/tv_tinggi_badan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/tinggi_badan_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_nama_panggilan"
+            app:layout_constraintStart_toStartOf="@+id/tv_biodata"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gol_darah" />
+
+        <TextView
+            android:id="@+id/tv_tinggi_badan_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_member"
+            app:layout_constraintTop_toTopOf="@+id/tv_tinggi_badan"
+            tools:text="157 cm" />
+
+        <TextView
+            android:id="@+id/tv_nama_panggilan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/nama_panggilan_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_biodata"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tinggi_badan" />
+
+        <TextView
+            android:id="@+id/tv_nama_panggilan_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_member"
+            app:layout_constraintTop_toTopOf="@+id/tv_nama_panggilan"
+            tools:text="Lulu" />
+
+        <TextView
+            android:id="@+id/tv_sosmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/sosmed"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_biodata"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_panggilan" />
+
+        <TextView
+            android:id="@+id/tv_ig"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/ig_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_biodata"
+            app:layout_constraintTop_toBottomOf="@+id/tv_sosmed" />
+
+        <TextView
+            android:id="@+id/tv_ig_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_member"
+            app:layout_constraintTop_toTopOf="@+id/tv_ig"
+            tools:text="\@jkt48.lulu" />
+
+        <TextView
+            android:id="@+id/tv_twitter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/twitter_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_biodata"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ig" />
+
+        <TextView
+            android:id="@+id/tv_twitter_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_nama_member"
+            app:layout_constraintTop_toTopOf="@+id/tv_twitter"
+            tools:text="\@A_LuluJKT48" />
+
+        <TextView
+            android:id="@+id/tv_member_lain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/member_lain"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tv_biodata"
+            app:layout_constraintTop_toBottomOf="@+id/tv_twitter_member" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_member_column"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_member_lain" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

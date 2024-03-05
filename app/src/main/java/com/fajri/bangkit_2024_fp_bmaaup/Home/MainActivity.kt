@@ -31,7 +31,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun GoToAboutPage() {
         ivProfile.setOnClickListener {
-            startActivity(Intent(this, AboutPage::class.java))
+            val intentAbout = Intent(this, AboutPage::class.java)
+            startActivity(intentAbout)
         }
     }
 
@@ -40,10 +41,16 @@ class MainActivity : AppCompatActivity() {
         val dataNama = resources.getStringArray(R.array.data_nama)
         val dataGenerasi = resources.getIntArray(R.array.data_generasi)
         val dataTglLahir = resources.getStringArray(R.array.data_tgl_lahir)
+        val dataGolDarah = resources.getStringArray(R.array.data_golongan_darah)
+        val dataTinggiBadan = resources.getStringArray(R.array.data_tinggi_badan)
+        val dataNamaPanggilan = resources.getStringArray(R.array.data_nama_panggilan)
+        val dataIg = resources.getStringArray(R.array.data_instagram)
+        val dataTwitter = resources.getStringArray(R.array.data_twitter)
+
         val listMember = ArrayList<Member>()
 
         for (i in dataNama.indices) {
-            val member = Member(dataPhoto.getResourceId(i, -1), dataNama[i], dataGenerasi[i], dataTglLahir[i])
+            val member = Member(dataPhoto.getResourceId(i, -1), dataNama[i], dataGenerasi[i], dataTglLahir[i], dataGolDarah[i], dataTinggiBadan[i], dataNamaPanggilan[i], dataIg[i], dataTwitter[i])
             listMember.add(member)
         }
 
